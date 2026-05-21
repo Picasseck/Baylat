@@ -1,0 +1,162 @@
+[
+  {
+    "id": "vanta-777",
+    "name": "Vanta 777",
+    "price": 1290,
+    "category": "Jackets",
+    "images": [
+      "/images/vanta-777-1.png",
+      "/images/vanta-777-2.png",
+      "/images/vanta-777-3.png",
+      "/images/vanta-777-model.png"
+    ],
+    "description": "A signature leather jacket cut from full-grain Italian hide. Mid-weight, hand-finished seams, and a silhouette that ages with you. Wear it once and it starts learning your body.",
+    "shortDescription": "Signature full-grain leather jacket.",
+    "stock": 8,
+    "featured": true
+  },
+  {
+    "id": "Choco-247",
+    "name": "Choco 247",
+    "price": 1450,
+    "category": "Jackets",
+    "images": [
+      "/images/choco-247-1.png",
+      "/images/choco-247-2.png",
+      "/images/choco-247-3.png",
+      "/images/choco-247-model.png"
+    ],
+    "description": "A sculptural cropped jacket in warm brown suede leather, designed with a high stand collar, structured shoulders, and dramatic gathered sleeves. The curved front panels create a corset-inspired silhouette, balancing soft texture with a strong editorial shape.",
+    "shortDescription": "Cropped brown suede jacket with sculptural sleeves.",
+    "stock": 12,
+    "featured": true
+  },
+  {
+    "id": "kora-9090",
+    "name": "Kora 9090",
+    "price": 1190,
+    "category": "Jackets",
+    "images": [
+      "/images/kora-9090-1.png",
+      "/images/kora-9090-2.png",
+      "/images/kora-9090-3.png",
+      "/images/kora-9090-model.png"
+    ],
+    "description": "A cropped suede leather jacket in a soft beige tone, designed with a clean collarless V-neck, front zip closure, and oversized patch pockets. Contrast stitching adds subtle structure, while the minimal cut gives it a refined everyday silhouette.",
+    "shortDescription": "Cropped beige suede jacket with patch pockets.",
+    "stock": 5,
+    "featured": false
+  },
+  {
+    "id": "veyra-365",
+    "name": "Veyra 365",
+    "price": 1390,
+    "category": "Jackets",
+    "images": [
+      "/images/veyra-365-1.png",
+      "/images/veyra-365-2.png",
+      "/images/veyra-365-3.png",
+      "/images/veyra-365-model.png"
+    ],
+    "description": "A black leather corset top with a sculpted waist, strapless neckline, and vertical panel detailing for a structured, modern silhouette.",
+    "shortDescription": "Black leather corset top.",
+    "stock": 7,
+    "featured": true
+  },
+  {
+    "id": "olive-222",
+    "name": "Olive 222",
+    "price": 1550,
+    "category": "Jackets",
+    "images": [
+      "/images/olive-222-1.png",
+      "/images/olive-222-2.png",
+      "/images/olive-222-3.png",
+      "/images/olive-222-model.png"
+    ],
+    "description": "A cropped dark olive jacket with a corduroy collar, slanted pockets, and statement hook closures for a clean utilitarian look.",
+"shortDescription": "Cropped olive jacket with hook closures.",
+    "stock": 4,
+    "featured": false
+  },
+  {
+    "id": "luxa-818",
+    "name": "Luxa 818",
+    "price": 890,
+    "category": "Jackets",
+    "images": [
+      "/images/luxa-818-1.png",
+      "/images/luxa-818-2.png",
+      "/images/luxa-818-3.png",
+      "/images/luxa-818-model.png"
+    ],
+    "description": "A cropped brown leather jacket with oversized lapels, front patch pockets, and ribbed cuffs for a bold bomber-inspired silhouette.",
+    "shortDescription": "Cropped brown leather bomber jacket.",
+    "stock": 10,
+    "featured": true
+  },
+  {
+    "id": "obsi-404",
+    "name": "Obsi 404",
+    "price": 720,
+    "category": "Bags",
+    "images": [
+      "/images/obsi-404-1.png",
+      "/images/obsi-404-2.png",
+      "/images/obsi-404-3.png",
+      "/images/obsi-404-model.png"
+    ],
+    "description": "A black pebbled leather weekender bag with structured top handles, a spacious rectangular shape, and refined metal details for elevated travel.",
+    "shortDescription": "Black leather weekender bag.",
+    "stock": 14,
+    "featured": false
+  },
+  {
+    "id": "kairo-1999",
+    "name": "Kairo 1999",
+    "price": 980,
+    "category": "Bags",
+    "images": [
+      "/images/kairo-1999-1.png",
+      "/images/kairo-1999-2.png",
+      "/images/kairo-1999-3.png",
+      "/images/kairo-1999-model.png"
+    ],
+    "description": "A black pebbled leather shoulder bag with structured top handles, a front belt detail, and polished metal hardware for a bold refined look.",
+    "shortDescription": "Black leather belted shoulder bag.",
+    "stock": 9,
+    "featured": true
+  },
+  {
+    "id": "zyra-brown",
+    "name": "Zyra in Brown",
+    "price": 1050,
+    "category": "Bags",
+    "images": [
+      "/images/zyra-brown-1.png",
+      "/images/zyra-brown-2.png",
+      "/images/zyra-brown-3.png",
+      "/images/zyra-brown-model.png"
+    ],
+    "description": "A large brown leather hobo bag with a soft curved handle, roomy body, and vintage texture for an effortless everyday look.",
+    "shortDescription": "Oversized brown leather hobo bag.",
+    "stock": 6,
+    "featured": false
+  },
+  {
+    "id": "zyra-black",
+    "name": "Zyra in Black",
+    "price": 1290,
+    "category": "Bags",
+    "images": [
+      "/images/zyra-black-1.png",
+      "/images/zyra-black-2.png",
+      "/images/zyra-black-3.png",
+      "/images/zyra-black-model.png"
+    ],
+    "description": "A weekender for people who travel light but well. Soft duffel construction, full-length zip, leather-wrapped grips. The bag that goes in the overhead bin and into the rest of your life.",
+    "shortDescription": "Soft leather weekender.",
+    "stock": 5,
+    "featured": true
+  }
+]
