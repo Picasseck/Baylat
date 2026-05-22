@@ -43,7 +43,7 @@ function Home() {
 
           <div className="hero__portrait">
             <img
-              src="/images/baylat-hero.jpg"
+              src="/images/baylat-hero.png"
               alt="Baylat, founder portrait"
               className="hero__image"
             />
@@ -98,6 +98,7 @@ function Home() {
       {/* ---------- JACKETS & BAGS ---------- */}
       <section className="home-duo container">
         <Link to="/products" className="home-duo__card home-duo__card--jackets">
+          <img src="/images/category-jackets.png" alt="Leather Jackets" className="home-duo__bg" />
           <div className="home-duo__overlay">
             <p className="eyebrow home-duo__eyebrow">Category 01</p>
             <h3 className="home-duo__title">Jackets</h3>
@@ -106,6 +107,7 @@ function Home() {
         </Link>
 
         <Link to="/products" className="home-duo__card home-duo__card--bags">
+          <img src="/images/category-bags.png" alt="Leather Bags" className="home-duo__bg" />
           <div className="home-duo__overlay">
             <p className="eyebrow home-duo__eyebrow">Category 02</p>
             <h3 className="home-duo__title">Bags</h3>

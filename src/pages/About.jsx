@@ -20,7 +20,7 @@ function About() {
       {/* Portrait + texte personnel */}
       <section className="container about__intro">
         <div className="about__portrait">
-          <img src="/images/baylat-profile.jpg" alt="Portrait of Baylat, founder" />
+          <img src="/images/baylat-profile.png" alt="Portrait of Baylat, founder" />
           <p className="about__portrait-caption">
             <span>Baylat</span>
             <span>Founder · 2026</span>
