@@ -1,0 +1,133 @@
+.cart__head {
+  padding-bottom: var(--space-5);
+  margin-bottom: var(--space-7);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.cart__title {
+  font-size: clamp(var(--text-2xl), 6vw, var(--text-4xl));
+  margin: var(--space-3) 0;
+}
+
+.cart__count {
+  font-size: var(--text-sm);
+  color: var(--color-stone);
+}
+
+.cart__count span {
+  color: var(--color-ink);
+  font-weight: 500;
+}
+
+.cart__layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.cart__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-5);
+}
+
+.cart__clear {
+  font-size: var(--text-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: color var(--t-fast);
+}
+
+.cart__clear:hover {
+  color: var(--color-leather);
+}
+
+/* Résumé latéral */
+.cart__summary {
+  background: var(--color-bone);
+  padding: var(--space-6);
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-4));
+}
+
+.cart__summary-title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.cart__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-3);
+}
+
+.cart__row dt {
+  color: var(--color-stone);
+}
+
+.cart__row--total {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  margin: var(--space-3) 0 var(--space-5);
+}
+
+.cart__row--total dt {
+  color: var(--color-ink);
+}
+
+.cart__shipping-info {
+  font-size: var(--text-xs);
+  color: var(--color-leather);
+  font-style: italic;
+  margin-bottom: var(--space-4);
+}
+
+.cart__divider {
+  border: none;
+  border-top: 1px solid var(--color-line);
+  margin: var(--space-4) 0;
+}
+
+.cart__summary-note {
+  font-size: var(--text-xs);
+  text-align: center;
+  color: var(--color-stone);
+  margin-top: var(--space-4);
+  letter-spacing: 0.06em;
+}
+
+/* État vide */
+.cart--empty {
+  text-align: center;
+  padding: var(--space-10) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart__empty-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: var(--color-stone);
+  max-width: 42ch;
+  margin: var(--space-4) 0 var(--space-7);
+}
+
+@media (max-width: 900px) {
+  .cart__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart__summary {
+    position: static;
+  }
+}
