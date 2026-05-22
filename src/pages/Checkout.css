@@ -1,0 +1,111 @@
+.checkout__head {
+  padding-bottom: var(--space-5);
+  margin-bottom: var(--space-7);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.checkout__title {
+  font-size: clamp(var(--text-2xl), 5vw, var(--text-3xl));
+  margin: var(--space-3) 0;
+}
+
+.checkout__layout {
+  display: grid;
+  grid-template-columns: 1.2fr 380px;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.checkout__section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-line);
+}
+
+/* Formulaire */
+.checkout__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* Résumé latéral */
+.checkout__summary {
+  background: var(--color-bone);
+  padding: var(--space-6);
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-4));
+}
+
+.checkout__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.checkout__item {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  gap: var(--space-4);
+}
+
+.checkout__item-qty {
+  color: var(--color-stone);
+}
+
+.checkout__totals {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-line);
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+}
+
+.checkout__total-amount {
+  font-size: var(--text-xl);
+}
+
+/* État vide */
+.checkout__empty {
+  font-style: italic;
+  color: var(--color-stone);
+  margin: var(--space-4) 0 var(--space-7);
+}
+
+/* Confirmation */
+.checkout--confirmed {
+  text-align: center;
+  padding-top: var(--space-9);
+}
+
+.checkout__confirmed-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-md);
+  color: var(--color-stone);
+  max-width: 50ch;
+  margin: 0 auto var(--space-7);
+  line-height: 1.7;
+}
+
+.checkout__confirmed-text strong {
+  font-style: normal;
+  color: var(--color-leather);
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .checkout__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout__summary {
+    position: static;
+    order: -1;
+  }
+}
