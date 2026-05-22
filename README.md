@@ -57,3 +57,39 @@ npm run test:run
 ---
 
 ## Structure
+
+```
+src/
+├── components/     Navbar, Footer, ProductCard, CartItem, SearchBar...
+├── context/        CartContext (état global du panier)
+├── data/           products.json (catalogue)
+├── pages/          Home, Products, ProductDetails, Cart, Checkout, About, NotFound
+├── utils/          Fonctions pour le prix, les filtres et le tri
+├── tests/          Tests Vitest
+├── App.jsx         Routes et layout principal
+├── main.jsx        Point d'entrée React
+└── index.css       Variables CSS, reset et styles globaux
+```
+
+---
+
+## Les images
+
+Chaque produit a 4 images dans `public/images/` :
+
+```
+[id]-1.jpg        vue de face
+[id]-2.jpg        vue de dos
+[id]-3.jpg        détail
+[id]-model.jpg    mannequin
+```
+
+Plus deux portraits du fondateur : `baylat-hero.jpg` et `baylat-profile.jpg`.
+
+---
+
+## À propos
+
+Ce projet a été réalisé dans le cadre de ma formation en développement web. J'ai voulu mélanger mes passions pour la mode, le design et le code en créant un site e-commerce complet de A à Z.
+
+Le nom "Baylat" vient de "Buy" + "Leather" — l'idée que chaque pièce en cuir n'est pas juste un produit, c'est un héritage à porter.
