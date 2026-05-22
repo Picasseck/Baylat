@@ -1,16 +1,95 @@
-# React + Vite
+# Baylat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Buy the Leather, Wear the Legacy.
 
-Currently, two official plugins are available:
+Projet e-commerce frontend pour ma marque de cuir fictive **Baylat**. Le concept : une maison de cuir premium italienne qui vend uniquement des vestes et des sacs en cuir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+J'ai construit ce projet avec React et Vite, sans framework CSS ni backend. Le panier est géré avec Context API et sauvegardé dans le localStorage, les produits viennent d'un fichier JSON local. Tout le CSS est écrit à la main.
 
-## React Compiler
+Ce projet m'a permis de travailler sur un vrai workflow Git avec des branches, des pull requests et des commits progressifs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- React Router 6
+- Context API + localStorage
+- CSS classique
+- Vitest + React Testing Library
+
+---
+
+## Pages du site
+
+- **Home** — hero avec portrait du fondateur, sélection de produits, catégories et manifeste de marque
+- **Products** — catalogue complet avec barre de recherche, filtre par catégorie et tri par prix/nom
+- **Product Details** — fiche produit avec galerie de 4 images cliquables et ajout au panier
+- **Cart** — panier avec gestion des quantités, résumé de commande et seuil de livraison gratuite
+- **Checkout** — formulaire de commande avec validation des champs et message de confirmation
+- **About** — page personnelle sur le fondateur et les valeurs de la marque
+- **404** — page d'erreur pour les URLs inconnues
+
+---
+
+## Lancer le projet
+
+```bash
+git clone https://github.com/Picasseck/Baylat.git
+cd Baylat
+npm install
+npm run dev
+```
+
+Le site tourne sur `http://localhost:5173`.
+
+---
+
+## Lancer les tests
+
+```bash
+npm run test:run
+```
+
+18 tests au total sur les composants principaux : ProductCard, Navbar, Cart, recherche produits et validation du checkout.
+
+---
+
+## Structure
+
+```
+src/
+├── components/     Navbar, Footer, ProductCard, CartItem, SearchBar...
+├── context/        CartContext (état global du panier)
+├── data/           products.json (catalogue)
+├── pages/          Home, Products, ProductDetails, Cart, Checkout, About, NotFound
+├── utils/          Fonctions pour le prix, les filtres et le tri
+├── tests/          Tests Vitest
+├── App.jsx         Routes et layout principal
+├── main.jsx        Point d'entrée React
+└── index.css       Variables CSS, reset et styles globaux
+```
+
+---
+
+## Les images
+
+Chaque produit a 4 images dans `public/images/` :
+
+```
+[id]-1.jpg        vue de face
+[id]-2.jpg        vue de dos
+[id]-3.jpg        détail
+[id]-model.jpg    mannequin
+```
+
+Plus deux portraits du fondateur : `baylat-hero.jpg` et `baylat-profile.jpg`.
+
+---
+
+## À propos
+
+Ce projet a été réalisé dans le cadre de ma formation en développement web. J'ai voulu mélanger mes passions pour la mode, le design et le code en créant un site e-commerce complet de A à Z.
+
+Le nom "Baylat" vient de "Buy" + "Leather" — l'idée que chaque pièce en cuir n'est pas juste un produit, c'est un héritage à porter.

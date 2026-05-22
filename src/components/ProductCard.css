@@ -1,0 +1,108 @@
+.product-card__link {
+  display: block;
+  color: inherit;
+}
+
+.product-card__visual {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: var(--color-bone);
+  margin-bottom: var(--space-4);
+}
+
+/* Les deux images empilées */
+.product-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card__image--main {
+  z-index: 1;
+  transition: transform 1200ms var(--ease-soft);
+}
+
+.product-card:hover .product-card__image--main {
+  transform: scale(1.04);
+}
+
+/* Image mannequin : invisible par défaut, apparait au hover */
+.product-card__image--model {
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 600ms var(--ease-soft);
+}
+
+.product-card:hover .product-card__image--model {
+  opacity: 1;
+}
+
+/* Bouton Add to cart qui monte du bas */
+.product-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: var(--space-4);
+  display: flex;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: transform var(--t-slow);
+}
+
+.product-card:hover .product-card__overlay {
+  transform: translateY(0);
+}
+
+.product-card__add {
+  font-size: 0.6875rem;
+  padding: var(--space-3) var(--space-5);
+}
+
+.product-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.product-card__category {
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+}
+
+.product-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+}
+
+.product-card__description {
+  font-size: var(--text-sm);
+  color: var(--color-stone);
+}
+
+.product-card__price {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  margin-top: var(--space-1);
+}
+
+/* Sur mobile pas de hover, on affiche le bouton en permanence */
+@media (hover: none) {
+  .product-card__image--model {
+    display: none;
+  }
+
+  .product-card__overlay {
+    position: static;
+    transform: none;
+    padding: 0;
+    margin-top: var(--space-3);
+    justify-content: flex-start;
+  }
+}

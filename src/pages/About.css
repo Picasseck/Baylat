@@ -1,0 +1,151 @@
+/* En-tête */
+.about__hero {
+  padding: var(--space-9) 0 var(--space-7);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.about__title {
+  font-size: clamp(var(--text-3xl), 9vw, var(--text-5xl));
+  line-height: 0.95;
+  margin: var(--space-4) 0;
+}
+
+.about__title em {
+  font-style: italic;
+  color: var(--color-leather);
+}
+
+.about__tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: var(--color-stone);
+}
+
+/* Portrait + texte */
+.about__intro {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--space-8);
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.about__portrait {
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-4));
+  background: radial-gradient(circle at 50% 30%, var(--color-tan), var(--color-leather-deep) 85%);
+}
+
+.about__portrait img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.about__portrait-caption {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-3);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+}
+
+.about__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  font-size: var(--text-md);
+  line-height: 1.8;
+  padding-top: var(--space-4);
+}
+
+.about__lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(var(--text-lg), 2.5vw, var(--text-xl));
+  line-height: 1.4;
+  color: var(--color-leather);
+  margin-bottom: var(--space-4);
+}
+
+.about__highlight {
+  padding-left: var(--space-5);
+  border-left: 2px solid var(--color-leather);
+  font-style: italic;
+  color: var(--color-ink-soft);
+}
+
+/* Les 3 piliers */
+.about__pillars {
+  background: var(--color-bone);
+  padding: var(--space-9) 0;
+}
+
+.about__pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-7);
+}
+
+.about__pillar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.about__pillar-number {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--color-leather);
+  line-height: 1;
+}
+
+.about__pillar-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  margin-top: var(--space-2);
+}
+
+.about__pillar p {
+  font-size: var(--text-sm);
+  color: var(--color-stone);
+  line-height: 1.7;
+  max-width: 36ch;
+}
+
+/* CTA */
+.about__cta {
+  padding: var(--space-9) 0;
+}
+
+.about__cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-6);
+}
+
+.about__cta-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(var(--text-xl), 4vw, var(--text-3xl));
+}
+
+@media (max-width: 900px) {
+  .about__intro {
+    grid-template-columns: 1fr;
+  }
+
+  .about__portrait {
+    position: static;
+    max-width: 380px;
+  }
+
+  .about__pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}

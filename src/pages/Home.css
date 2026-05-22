@@ -1,0 +1,299 @@
+.home {
+  padding-bottom: var(--space-9);
+}
+
+/*  HERO  */
+.hero {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-7);
+  overflow: hidden;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.hero__copy {
+  z-index: 2;
+  padding-top: var(--space-5);
+}
+
+.hero__title {
+  font-size: clamp(3.5rem, 11vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin: var(--space-6) 0 var(--space-5);
+}
+
+.hero__title em {
+  font-style: italic;
+  color: var(--color-leather);
+}
+
+.hero__tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: var(--color-leather);
+  margin-bottom: var(--space-5);
+}
+
+.hero__text {
+  font-size: var(--text-md);
+  color: var(--color-stone);
+  line-height: 1.7;
+  max-width: 46ch;
+  margin-bottom: var(--space-7);
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+/* Portrait du fondateur(moi) */
+.hero__portrait {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 30%, var(--color-tan), var(--color-leather-deep) 85%);
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__caption {
+  position: absolute;
+  bottom: var(--space-5);
+  right: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-paper);
+  font-family: var(--font-display);
+}
+
+.hero__caption-num {
+  font-size: var(--text-md);
+  color: var(--color-stone);
+}
+
+.hero__caption-text {
+  font-size: var(--text-sm);
+  line-height: 1.2;
+}
+
+.hero__caption-text em {
+  font-style: italic;
+  font-size: var(--text-md);
+  color: var(--color-leather);
+}
+
+/* Bandeau défilant */
+.hero__marquee {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  white-space: nowrap;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-md);
+  color: var(--color-stone);
+  animation: marquee 28s linear infinite;
+}
+
+.hero__marquee span {
+  flex-shrink: 0;
+  padding: 0 var(--space-4);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/*  COLLECTION  */
+.home-section {
+  padding-top: var(--space-10);
+}
+
+.home-section__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.home-section__title {
+  font-size: clamp(var(--text-2xl), 4.5vw, var(--text-3xl));
+  max-width: 22ch;
+  margin-top: var(--space-3);
+}
+
+.home-section__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-7) var(--space-5);
+}
+
+@media (min-width: 1024px) {
+  .home-section__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*  DUO JACKETS & BAGS  */
+.home-duo {
+  margin-top: var(--space-10);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.home-duo__card {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  display: block;
+  color: var(--color-cream);
+}
+
+/* Fond dégradé (je vais remplacé par une vraie image plus tard) */
+.home-duo__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transition: transform 1400ms var(--ease-soft);
+}
+
+.home-duo__card:hover::before {
+  transform: scale(1.05);
+}
+
+.home-duo__card--jackets::before {
+  background:
+    linear-gradient(180deg, rgba(10,10,10,0.05), rgba(10,10,10,0.65)),
+    radial-gradient(circle at 30% 30%, #2a1e15, #0a0a0a 80%);
+}
+
+.home-duo__card--bags::before {
+  background:
+    linear-gradient(180deg, rgba(10,10,10,0.05), rgba(10,10,10,0.55)),
+    radial-gradient(circle at 70% 60%, var(--color-leather), var(--color-leather-deep) 80%);
+}
+
+.home-duo__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-6);
+  gap: var(--space-3);
+}
+
+.home-duo__eyebrow {
+  color: var(--color-tan);
+}
+
+.home-duo__title {
+  font-size: clamp(var(--text-2xl), 6vw, var(--text-4xl));
+  letter-spacing: 0.02em;
+}
+
+.home-duo__cta {
+  color: var(--color-cream);
+  margin-top: var(--space-2);
+}
+
+/*  MANIFESTE  */
+.home-manifesto {
+  margin-top: var(--space-10);
+  padding: var(--space-10) 0;
+  background: var(--color-bone);
+  text-align: center;
+  position: relative;
+}
+
+.home-manifesto::before,
+.home-manifesto::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  background: var(--color-leather);
+  left: 50%;
+}
+
+.home-manifesto::before { top: var(--space-7); }
+.home-manifesto::after { bottom: var(--space-7); }
+
+.home-manifesto__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-manifesto__quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(var(--text-xl), 3.5vw, var(--text-3xl));
+  line-height: 1.25;
+  max-width: 30ch;
+  margin: var(--space-5) auto var(--space-4);
+}
+
+.home-manifesto__signature {
+  font-size: var(--text-xs);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+  margin-bottom: var(--space-7);
+}
+
+/*  RESPONSIVE  */
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__copy {
+    padding-top: 0;
+    order: 2;
+  }
+
+  .hero__portrait {
+    order: 1;
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .home-duo {
+    grid-template-columns: 1fr;
+  }
+
+  .home-section__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
