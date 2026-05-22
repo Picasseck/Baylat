@@ -2,6 +2,8 @@
 
 > Buy the Leather, Wear the Legacy.
 
+🔗 **[Voir le site en ligne](https://baylat.vercel.app)**
+
 Projet e-commerce frontend pour ma marque de cuir fictive **Baylat**. Le concept : une maison de cuir premium italienne qui vend uniquement des vestes et des sacs en cuir.
 
 J'ai construit ce projet avec React et Vite, sans framework CSS ni backend. Le panier est géré avec Context API et sauvegardé dans le localStorage, les produits viennent d'un fichier JSON local. Tout le CSS est écrit à la main.
