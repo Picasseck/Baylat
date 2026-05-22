@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import Navbar from './components/Navbar';
-import Home from './pages/Home'
+import Home from './pages/Home';
+import Products from './pages/Products';
 import Footer from './components/Footer';
 
 // Les pages viendront ici au fur et à mesure
@@ -16,7 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Placeholder title="Products" />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Placeholder title="Cart" />} />
           <Route path="/about" element={<Placeholder title="About" />} />
         </Routes>
