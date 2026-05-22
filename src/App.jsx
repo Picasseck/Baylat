@@ -1,10 +1,27 @@
-// Point d'entrée de l'application, j'ajouterai les routes plus tard
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+// Les pages viendront ici au fur et à mesure
+function Placeholder({ title }) {
+  return <div className="page container"><h1>{title}</h1></div>;
+}
+
 function App() {
   return (
-    <div>
-      <h1>Baylat</h1>
-      <p>Buy the Leather, Wear the Legacy.</p>
-    </div>
+    <CartProvider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Placeholder title="Home" />} />
+          <Route path="/products" element={<Placeholder title="Products" />} />
+          <Route path="/cart" element={<Placeholder title="Cart" />} />
+          <Route path="/about" element={<Placeholder title="About" />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 
