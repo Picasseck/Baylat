@@ -3,6 +3,7 @@ import { CartProvider } from './context/CartContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
 import Footer from './components/Footer';
 
 // Les pages viendront ici au fur et à mesure
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Placeholder title="Cart" />} />
           <Route path="/about" element={<Placeholder title="About" />} />
         </Routes>
