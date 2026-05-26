@@ -93,7 +93,7 @@
 }
 
 /* Sur mobile pas de hover, on affiche le bouton en permanence */
-@media (hover: none) {
+@media (max-width: 768px) {
   .product-card__image--model {
     display: none;
   }
